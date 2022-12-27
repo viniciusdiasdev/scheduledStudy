@@ -1,0 +1,1011 @@
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 19780 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+[INFO] Tomcat initialized with port(s): 8080 (http)
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 1575 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] LiveReload server is running on port 35729
+[INFO] Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-client-groupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = client-groupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672144175702
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
+[INFO] Started DatabaseApplication in 4.654 seconds (process running for 6.367)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-8f92c970-45e5-4b2d-9ef2-7c7bab8154d0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=145, memberId='consumer-client-groupId-1-8f92c970-45e5-4b2d-9ef2-7c7bab8154d0', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 145: {consumer-client-groupId-1-8f92c970-45e5-4b2d-9ef2-7c7bab8154d0=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=145, memberId='consumer-client-groupId-1-8f92c970-45e5-4b2d-9ef2-7c7bab8154d0', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=88, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 1 ms
+[INFO] ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672144190934
+[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Producer clientId=producer-1] ProducerId set to 3030 with epoch 0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node -1 disconnected.
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
+[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-8f92c970-45e5-4b2d-9ef2-7c7bab8154d0 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] Metrics scheduler closed
+[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[INFO] Metrics reporters closed
+[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
+[INFO] client-groupId: Consumer stopped
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 11548 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+[INFO] Tomcat initialized with port(s): 8080 (http)
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 2129 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] LiveReload server is running on port 35729
+[INFO] Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-client-groupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = client-groupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148287211
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
+[INFO] Started DatabaseApplication in 5.921 seconds (process running for 8.197)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-290e74f6-ccc3-43f9-bac2-474046a81d3f
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=147, memberId='consumer-client-groupId-1-290e74f6-ccc3-43f9-bac2-474046a81d3f', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 147: {consumer-client-groupId-1-290e74f6-ccc3-43f9-bac2-474046a81d3f=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=147, memberId='consumer-client-groupId-1-290e74f6-ccc3-43f9-bac2-474046a81d3f', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=99, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 1 ms
+[INFO] ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148299577
+[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Producer clientId=producer-1] ProducerId set to 3031 with epoch 0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
+[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-290e74f6-ccc3-43f9-bac2-474046a81d3f sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] Metrics scheduler closed
+[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[INFO] Metrics reporters closed
+[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
+[INFO] client-groupId: Consumer stopped
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 2284 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+[INFO] Tomcat initialized with port(s): 8080 (http)
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 1873 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] LiveReload server is running on port 35729
+[INFO] Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-client-groupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = client-groupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148372987
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
+[INFO] Started DatabaseApplication in 5.29 seconds (process running for 6.426)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-0f7ad189-1e77-4bea-b6e9-b2d7e2fca5a6
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=149, memberId='consumer-client-groupId-1-0f7ad189-1e77-4bea-b6e9-b2d7e2fca5a6', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 149: {consumer-client-groupId-1-0f7ad189-1e77-4bea-b6e9-b2d7e2fca5a6=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=149, memberId='consumer-client-groupId-1-0f7ad189-1e77-4bea-b6e9-b2d7e2fca5a6', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=106, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 2 ms
+[INFO] ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148379734
+[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Producer clientId=producer-1] ProducerId set to 3032 with epoch 0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
+[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-0f7ad189-1e77-4bea-b6e9-b2d7e2fca5a6 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] Metrics scheduler closed
+[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[INFO] Metrics reporters closed
+[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
+[INFO] client-groupId: Consumer stopped
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 8356 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
+[INFO] Tomcat initialized with port(s): 8080 (http)
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 1936 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] LiveReload server is running on port 35729
+[INFO] Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-client-groupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = client-groupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148608767
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
+[INFO] Started DatabaseApplication in 5.708 seconds (process running for 6.801)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-c08b38db-3892-4e53-8e3a-8f6551a2c856
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=151, memberId='consumer-client-groupId-1-c08b38db-3892-4e53-8e3a-8f6551a2c856', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 151: {consumer-client-groupId-1-c08b38db-3892-4e53-8e3a-8f6551a2c856=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=151, memberId='consumer-client-groupId-1-c08b38db-3892-4e53-8e3a-8f6551a2c856', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=114, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 1 ms
+[INFO] ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
+[INFO] Kafka version: 3.3.1
+[INFO] Kafka commitId: e23c59d00e687ff5
+[INFO] Kafka startTimeMs: 1672148648012
+[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
+[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
+[INFO] [Producer clientId=producer-1] ProducerId set to 3033 with epoch 0
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
+[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-c08b38db-3892-4e53-8e3a-8f6551a2c856 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
+[INFO] Metrics scheduler closed
+[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[INFO] Metrics reporters closed
+[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
+[INFO] client-groupId: Consumer stopped
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
