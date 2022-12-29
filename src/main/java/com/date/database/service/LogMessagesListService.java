@@ -9,16 +9,17 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Service
-public class LogServiceMessages {
+public class LogMessagesListService {
 
     @Autowired
     MessageLogRepository messageLogRepository;
 
     @Autowired
-    GetOneMessageService getOneMessageService;
+    GetListMessagesService getListMessagesService;
 
     @Autowired
     UpdateMessageService updateMessageService;
@@ -29,8 +30,10 @@ public class LogServiceMessages {
     @Scheduled(fixedDelay = 1000)
     public void logTheMessages(){
         System.out.println("Iniciou thread");
-        MessageLog message = getOneMessageService.getOneMessage();
-        isFiveSecondsAfter(message);
+        List<MessageLog> messageLogList = getListMessagesService.getAllMessages();
+        if(Objects.nonNull(messageLogList)){
+            messageLogList.forEach(messageLog -> isFiveSecondsAfter(messageLog));
+        }
     }
 
     public void isFiveSecondsAfter(MessageLog messageLog) {
@@ -41,7 +44,6 @@ public class LogServiceMessages {
                 RestTemplate restTemplate = new RestTemplate();
                 ArrayList<String> object = restTemplate.getForObject("http://localhost:8081/template", ArrayList.class);
                 System.out.println(object);
-//                timeVerificationService.testeTime();
                 updateMessageService.updateMessage(messageLog);
             }
         }

@@ -6,19 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Objects;
 
 @Component
-public class GetOneMessageService {
+public class GetListMessagesService {
 
     @Autowired
     MessageLogRepository messageLogRepository;
 
-    public MessageLog getOneMessage(){
-        List<MessageLog> isReadIsFalse = messageLogRepository.findByIsReadIsFalse();
-        if(!isReadIsFalse.isEmpty()){
-            return isReadIsFalse.get(0);
-        }
-        return null;
+    public List<MessageLog> getAllMessages(){
+        System.out.println("Query de novo");
+        return messageLogRepository.findByIsReadIsFalse();
     }
 }
