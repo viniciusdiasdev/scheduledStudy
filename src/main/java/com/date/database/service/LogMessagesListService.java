@@ -1,7 +1,6 @@
 package com.date.database.service;
 
 import com.date.database.entity.MessageLog;
-import com.date.database.repository.MessageLogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -16,20 +15,13 @@ import java.util.Objects;
 public class LogMessagesListService {
 
     @Autowired
-    MessageLogRepository messageLogRepository;
-
-    @Autowired
     GetListMessagesService getListMessagesService;
 
     @Autowired
     UpdateMessageService updateMessageService;
 
-    @Autowired
-    TimeVerificationService timeVerificationService;
-
     @Scheduled(fixedDelay = 1000)
     public void logTheMessages(){
-        System.out.println("Iniciou thread");
         List<MessageLog> messageLogList = getListMessagesService.getAllMessages();
         if(Objects.nonNull(messageLogList)){
             messageLogList.forEach(messageLog -> isFiveSecondsAfter(messageLog));

@@ -28,7 +28,6 @@ public class LogServiceMessages {
 
     @Scheduled(fixedDelay = 1000)
     public void logTheMessages(){
-        System.out.println("Iniciou thread");
         MessageLog message = getOneMessageService.getOneMessage();
         isFiveSecondsAfter(message);
     }
@@ -41,7 +40,6 @@ public class LogServiceMessages {
                 RestTemplate restTemplate = new RestTemplate();
                 ArrayList<String> object = restTemplate.getForObject("http://localhost:8081/template", ArrayList.class);
                 System.out.println(object);
-//                timeVerificationService.testeTime();
                 updateMessageService.updateMessage(messageLog);
             }
         }

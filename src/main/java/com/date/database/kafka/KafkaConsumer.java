@@ -17,7 +17,6 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "vinicius3_client", groupId = "client-groupId")
     public void consumer(String message){
-        System.out.println("Não travou");
         MessageLogDto messageLogDto = new MessageLogDto(message);
         saveMessageService.saveMessage(messageLogDto);
     }

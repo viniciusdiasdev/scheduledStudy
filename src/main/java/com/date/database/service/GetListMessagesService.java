@@ -14,7 +14,6 @@ public class GetListMessagesService {
     MessageLogRepository messageLogRepository;
 
     public List<MessageLog> getAllMessages(){
-        System.out.println("Query de novo");
         return messageLogRepository.findByIsReadIsFalse();
     }
 }
