@@ -1,14 +1,14 @@
-[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 15796 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 14720 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
 [INFO] No active profile set, falling back to 1 default profile: "default"
 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO] Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+[INFO] Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
 [INFO] Tomcat initialized with port(s): 8080 (http)
 [INFO] Starting service [Tomcat]
 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
 [INFO] Initializing Spring embedded WebApplicationContext
-[INFO] Root WebApplicationContext: initialization completed in 1386 ms
+[INFO] Root WebApplicationContext: initialization completed in 1480 ms
 [INFO] HikariPool-1 - Starting...
 [INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
 [INFO] HikariPool-1 - Start completed.
@@ -20,7 +20,7 @@
 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN] Unable to start LiveReload server
+[INFO] LiveReload server is running on port 35729
 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
 [INFO] ConsumerConfig values: 
 	allow.auto.create.topics = true
@@ -117,325 +117,22 @@
 
 [INFO] Kafka version: 3.3.1
 [INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672317833952
+[INFO] Kafka startTimeMs: 1672755677077
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
-[INFO] Started DatabaseApplication in 4.087 seconds (process running for 4.883)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO] Started DatabaseApplication in 4.227 seconds (process running for 5.534)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-64478625-e84a-41f5-8a92-819ca0a65b88
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-437cd664-4cbb-4800-b525-3fb8d7d049d9
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=48, memberId='consumer-client-groupId-1-64478625-e84a-41f5-8a92-819ca0a65b88', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 48: {consumer-client-groupId-1-64478625-e84a-41f5-8a92-819ca0a65b88=Assignment(partitions=[vinicius3_client-0])}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=48, memberId='consumer-client-groupId-1-64478625-e84a-41f5-8a92-819ca0a65b88', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=58, memberId='consumer-client-groupId-1-437cd664-4cbb-4800-b525-3fb8d7d049d9', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 58: {consumer-client-groupId-1-437cd664-4cbb-4800-b525-3fb8d7d049d9=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=58, memberId='consumer-client-groupId-1-437cd664-4cbb-4800-b525-3fb8d7d049d9', protocol='range'}
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=88, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
-[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[ERROR] Unexpected error occurred in scheduled task
-java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because "messageLogList" is null
-	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
-[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-64478625-e84a-41f5-8a92-819ca0a65b88 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] Metrics scheduler closed
-[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
-[INFO] Metrics reporters closed
-[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
-[INFO] client-groupId: Consumer stopped
-[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-[INFO] HikariPool-1 - Shutdown initiated...
-[INFO] HikariPool-1 - Shutdown completed.
-[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 4424 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
-[INFO] No active profile set, falling back to 1 default profile: "default"
-[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO] Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
-[INFO] Tomcat initialized with port(s): 8080 (http)
-[INFO] Starting service [Tomcat]
-[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
-[INFO] Initializing Spring embedded WebApplicationContext
-[INFO] Root WebApplicationContext: initialization completed in 1107 ms
-[INFO] HikariPool-1 - Starting...
-[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
-[INFO] HikariPool-1 - Start completed.
-[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
-[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
-[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN] Unable to start LiveReload server
-[INFO] Tomcat started on port(s): 8080 (http) with context path ''
-[INFO] ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-	bootstrap.servers = [localhost:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-client-groupId-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = client-groupId
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-[INFO] Kafka version: 3.3.1
-[INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672317899426
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
-[INFO] Started DatabaseApplication in 3.562 seconds (process running for 4.185)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-ff1c5de7-a4dd-4bd7-a466-af7ed8dbc92d
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=50, memberId='consumer-client-groupId-1-ff1c5de7-a4dd-4bd7-a466-af7ed8dbc92d', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 50: {consumer-client-groupId-1-ff1c5de7-a4dd-4bd7-a466-af7ed8dbc92d=Assignment(partitions=[vinicius3_client-0])}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=50, memberId='consumer-client-groupId-1-ff1c5de7-a4dd-4bd7-a466-af7ed8dbc92d', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=88, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=120, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
 [INFO] client-groupId: partitions assigned: [vinicius3_client-0]
 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO] Initializing Servlet 'dispatcherServlet'
@@ -532,13 +229,15 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 [INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
 [INFO] Kafka version: 3.3.1
 [INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672317917536
+[INFO] Kafka startTimeMs: 1672755698444
 [INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
 [INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Producer clientId=producer-1] ProducerId set to 5021 with epoch 0
+[INFO] [Producer clientId=producer-1] ProducerId set to 5025 with epoch 0
+[INFO] 2023-01-03T11:21:38.524984800 mensagem salva.
+[INFO] MessageLog{id=1, message='teste', dateNow:2023-01-03T11:21:48.787813200, dateAtMessage:2023-01-03T11:21:38.524984800}
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
 [INFO] client-groupId: partitions revoked: [vinicius3_client-0]
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-ff1c5de7-a4dd-4bd7-a466-af7ed8dbc92d sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-437cd664-4cbb-4800-b525-3fb8d7d049d9 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
@@ -553,17 +252,17 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 [WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 [INFO] HikariPool-1 - Shutdown initiated...
 [INFO] HikariPool-1 - Shutdown completed.
-[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 6448 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
+[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 9684 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
 [INFO] No active profile set, falling back to 1 default profile: "default"
 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO] Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+[INFO] Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interfaces.
 [INFO] Tomcat initialized with port(s): 8080 (http)
 [INFO] Starting service [Tomcat]
 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
 [INFO] Initializing Spring embedded WebApplicationContext
-[INFO] Root WebApplicationContext: initialization completed in 1157 ms
+[INFO] Root WebApplicationContext: initialization completed in 2620 ms
 [INFO] HikariPool-1 - Starting...
 [INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
 [INFO] HikariPool-1 - Start completed.
@@ -575,7 +274,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN] Unable to start LiveReload server
+[INFO] LiveReload server is running on port 35729
 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
 [INFO] ConsumerConfig values: 
 	allow.auto.create.topics = true
@@ -672,275 +371,49 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 
 [INFO] Kafka version: 3.3.1
 [INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672318096056
+[INFO] Kafka startTimeMs: 1672769197731
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
-[INFO] Started DatabaseApplication in 3.643 seconds (process running for 4.258)
+[INFO] Started DatabaseApplication in 5.638 seconds (process running for 7.03)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-1c66cf0b-9d17-445c-a79f-c356114b89a5
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-a35f7bcd-e54f-434e-90cf-9fd28bc0c92b
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=52, memberId='consumer-client-groupId-1-1c66cf0b-9d17-445c-a79f-c356114b89a5', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 52: {consumer-client-groupId-1-1c66cf0b-9d17-445c-a79f-c356114b89a5=Assignment(partitions=[vinicius3_client-0])}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=52, memberId='consumer-client-groupId-1-1c66cf0b-9d17-445c-a79f-c356114b89a5', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=60, memberId='consumer-client-groupId-1-a35f7bcd-e54f-434e-90cf-9fd28bc0c92b', protocol='range'}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 60: {consumer-client-groupId-1-a35f7bcd-e54f-434e-90cf-9fd28bc0c92b=Assignment(partitions=[vinicius3_client-0])}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=60, memberId='consumer-client-groupId-1-a35f7bcd-e54f-434e-90cf-9fd28bc0c92b', protocol='range'}
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=104, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=121, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
 [INFO] client-groupId: partitions assigned: [vinicius3_client-0]
-[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO] Initializing Servlet 'dispatcherServlet'
-[INFO] Completed initialization in 2 ms
-[INFO] ProducerConfig values: 
-	acks = -1
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
-
-[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
-[INFO] Kafka version: 3.3.1
-[INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672318100939
-[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Producer clientId=producer-1] ProducerId set to 5022 with epoch 0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
-[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-1c66cf0b-9d17-445c-a79f-c356114b89a5 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] Metrics scheduler closed
-[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
-[INFO] Metrics reporters closed
-[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
-[INFO] client-groupId: Consumer stopped
-[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-[INFO] HikariPool-1 - Shutdown initiated...
-[INFO] HikariPool-1 - Shutdown completed.
-[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 9376 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
-[INFO] No active profile set, falling back to 1 default profile: "default"
-[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
-[INFO] Tomcat initialized with port(s): 8080 (http)
-[INFO] Starting service [Tomcat]
-[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
-[INFO] Initializing Spring embedded WebApplicationContext
-[INFO] Root WebApplicationContext: initialization completed in 1232 ms
-[INFO] HikariPool-1 - Starting...
-[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
-[INFO] HikariPool-1 - Start completed.
-[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
-[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
-[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN] Unable to start LiveReload server
-[INFO] Tomcat started on port(s): 8080 (http) with context path ''
-[INFO] ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-	bootstrap.servers = [localhost:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-client-groupId-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = client-groupId
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-[INFO] Kafka version: 3.3.1
-[INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672318237932
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
-[INFO] Started DatabaseApplication in 3.546 seconds (process running for 4.178)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-7cd3d220-e219-40dd-ae82-36585ec5a8cf
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=54, memberId='consumer-client-groupId-1-7cd3d220-e219-40dd-ae82-36585ec5a8cf', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 54: {consumer-client-groupId-1-7cd3d220-e219-40dd-ae82-36585ec5a8cf=Assignment(partitions=[vinicius3_client-0])}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=54, memberId='consumer-client-groupId-1-7cd3d220-e219-40dd-ae82-36585ec5a8cf', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=110, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
-[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 2147483647 disconnected.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cancelled in-flight FETCH request with correlation id 33 due to node 0 being disconnected (elapsed time since creation: 497ms, elapsed time since send: 497ms, request timeout: 30000ms)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cancelled in-flight METADATA request with correlation id 34 due to node 0 being disconnected (elapsed time since creation: 467ms, elapsed time since send: 467ms, request timeout: 30000ms)
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node -1 disconnected.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=20) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO] Initializing Servlet 'dispatcherServlet'
 [INFO] Completed initialization in 1 ms
@@ -1036,13 +509,104 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 [INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
 [INFO] Kafka version: 3.3.1
 [INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672318241668
-[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Producer clientId=producer-1] ProducerId set to 5023 with epoch 0
+[INFO] Kafka startTimeMs: 1672769222048
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Error sending fetch request (sessionId=999058281, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Node 0 disconnected.
+[WARN] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Connection to node 0 (DESKTOP-993I2G7/192.168.1.7:9092) could not be established. Broker may not be available.
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
 [INFO] client-groupId: partitions revoked: [vinicius3_client-0]
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-7cd3d220-e219-40dd-ae82-36585ec5a8cf sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
 [INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
@@ -1053,258 +617,460 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because 
 [INFO] Metrics reporters closed
 [INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
 [INFO] client-groupId: Consumer stopped
-[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-[WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-[INFO] HikariPool-1 - Shutdown initiated...
-[INFO] HikariPool-1 - Shutdown completed.
-[INFO] Starting DatabaseApplication using Java 17.0.5 with PID 5604 (C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database\target\classes started by vinic in C:\Users\vinic\OneDrive\Área de Trabalho\Projetos\pocs\database)
-[INFO] No active profile set, falling back to 1 default profile: "default"
-[INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO] Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
-[INFO] Tomcat initialized with port(s): 8080 (http)
-[INFO] Starting service [Tomcat]
-[INFO] Starting Servlet engine: [Apache Tomcat/10.1.4]
-[INFO] Initializing Spring embedded WebApplicationContext
-[INFO] Root WebApplicationContext: initialization completed in 2517 ms
-[INFO] HikariPool-1 - Starting...
-[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:logger user=SA
-[INFO] HikariPool-1 - Start completed.
-[INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:logger'
-[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO] HHH000412: Hibernate ORM core version 6.1.6.Final
-[WARN] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN] Unable to start LiveReload server
-[INFO] Tomcat started on port(s): 8080 (http) with context path ''
-[INFO] ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-	bootstrap.servers = [localhost:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-client-groupId-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = client-groupId
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-[INFO] Kafka version: 3.3.1
-[INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672320372738
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Subscribed to topic(s): vinicius3_client
-[INFO] Started DatabaseApplication in 4.907 seconds (process running for 5.564)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Discovered group coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: need to re-join with the given member-id: consumer-client-groupId-1-325c7a24-5239-4208-bf43-75a32ac442b3
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] (Re-)joining group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully joined group with generation Generation{generationId=56, memberId='consumer-client-groupId-1-325c7a24-5239-4208-bf43-75a32ac442b3', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Finished assignment for group at generation 56: {consumer-client-groupId-1-325c7a24-5239-4208-bf43-75a32ac442b3=Assignment(partitions=[vinicius3_client-0])}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Successfully synced group in generation Generation{generationId=56, memberId='consumer-client-groupId-1-325c7a24-5239-4208-bf43-75a32ac442b3', protocol='range'}
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Notifying assignor about the new Assignment(partitions=[vinicius3_client-0])
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Adding newly assigned partitions: vinicius3_client-0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Setting offset for partition vinicius3_client-0 to the committed offset FetchPosition{offset=113, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-993I2G7:9092 (id: 0 rack: null)], epoch=0}}
-[INFO] client-groupId: partitions assigned: [vinicius3_client-0]
-[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO] Initializing Servlet 'dispatcherServlet'
-[INFO] Completed initialization in 1 ms
-[INFO] ProducerConfig values: 
-	acks = -1
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
-
-[INFO] [Producer clientId=producer-1] Instantiated an idempotent producer.
-[INFO] Kafka version: 3.3.1
-[INFO] Kafka commitId: e23c59d00e687ff5
-[INFO] Kafka startTimeMs: 1672320373925
-[INFO] [Producer clientId=producer-1] Resetting the last seen epoch of partition vinicius3_client-0 to 0 since the associated topicId changed from null to 6dytz1hzRnyYsRUUMjsdiA
-[INFO] [Producer clientId=producer-1] Cluster ID: 5gDfnEpSRgK1TNKML-HpTw
-[INFO] [Producer clientId=producer-1] ProducerId set to 5024 with epoch 0
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Revoke previously assigned partitions vinicius3_client-0
-[INFO] client-groupId: partitions revoked: [vinicius3_client-0]
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Member consumer-client-groupId-1-325c7a24-5239-4208-bf43-75a32ac442b3 sending LeaveGroup request to coordinator DESKTOP-993I2G7:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Unsubscribed all topics or patterns and assigned partitions
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Resetting generation and member id due to: consumer pro-actively leaving the group
-[INFO] [Consumer clientId=consumer-client-groupId-1, groupId=client-groupId] Request joining group due to: consumer pro-actively leaving the group
-[INFO] Metrics scheduler closed
-[INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
-[INFO] Metrics reporters closed
-[INFO] App info kafka.consumer for consumer-client-groupId-1 unregistered
-[INFO] client-groupId: Consumer stopped
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[WARN] SQL Error: 42104, SQLState: 42S04
+[ERROR] Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+[ERROR] Unexpected error occurred in scheduled task
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:257)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy112.findByIsReadIsFalse(Unknown Source)
+	at com.date.database.service.GetListMessagesService.getAllMessages(GetListMessagesService.java:17)
+	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:75)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.lambda$list$0(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:146)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:205)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:85)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:88)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:197)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:443)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:166)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:113)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:335)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:276)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:571)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:363)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1073)
+	at org.hibernate.query.Query.getResultList(Query.java:94)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:401)
+	at jdk.proxy4/jdk.proxy4.$Proxy119.getResultList(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:127)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8385)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8369)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8358)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1863)
+	at org.h2.command.Parser.readTableReference(Parser.java:2334)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:90)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 62 common frames omitted
+[WARN] SQL Error: 42104, SQLState: 42S04
+[ERROR] Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+[ERROR] Unexpected error occurred in scheduled task
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:257)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy112.findByIsReadIsFalse(Unknown Source)
+	at com.date.database.service.GetOneMessageService.getOneMessage(GetOneMessageService.java:18)
+	at com.date.database.service.LogServiceMessages.logTheMessages(LogServiceMessages.java:31)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:75)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.lambda$list$0(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:146)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:205)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:85)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:88)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:197)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:443)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:166)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:113)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:335)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:276)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:571)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:363)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1073)
+	at org.hibernate.query.Query.getResultList(Query.java:94)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:401)
+	at jdk.proxy4/jdk.proxy4.$Proxy119.getResultList(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:127)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8385)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8369)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8358)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1863)
+	at org.h2.command.Parser.readTableReference(Parser.java:2334)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:90)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 62 common frames omitted
+[INFO] [Producer clientId=producer-1] Node -1 disconnected.
+[WARN] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[WARN] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[WARN] SQL Error: 42104, SQLState: 42S04
+[ERROR] Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+[ERROR] Unexpected error occurred in scheduled task
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:257)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy112.findByIsReadIsFalse(Unknown Source)
+	at com.date.database.service.GetListMessagesService.getAllMessages(GetListMessagesService.java:17)
+	at com.date.database.service.LogMessagesListService.logTheMessages(LogMessagesListService.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:75)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.lambda$list$0(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:146)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:205)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:85)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:88)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:197)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:443)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:166)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:113)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:335)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:276)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:571)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:363)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1073)
+	at org.hibernate.query.Query.getResultList(Query.java:94)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:401)
+	at jdk.proxy4/jdk.proxy4.$Proxy119.getResultList(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:127)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8385)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8369)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8358)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1863)
+	at org.h2.command.Parser.readTableReference(Parser.java:2334)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:90)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 62 common frames omitted
+[WARN] SQL Error: 42104, SQLState: 42S04
+[ERROR] Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+[ERROR] Unexpected error occurred in scheduled task
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:257)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy112.findByIsReadIsFalse(Unknown Source)
+	at com.date.database.service.GetOneMessageService.getOneMessage(GetOneMessageService.java:18)
+	at com.date.database.service.LogServiceMessages.logTheMessages(LogServiceMessages.java:31)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:75)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.lambda$list$0(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:146)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:205)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:85)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:88)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:197)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:443)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:166)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:113)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:335)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:276)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:571)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:363)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1073)
+	at org.hibernate.query.Query.getResultList(Query.java:94)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:401)
+	at jdk.proxy4/jdk.proxy4.$Proxy119.getResultList(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:127)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGE_LOG" not found (this database is empty); SQL statement:
+select m1_0.id,m1_0.date_at_time,m1_0.is_read,m1_0.message from message_log m1_0 where not(m1_0.is_read) [42104-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8385)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8369)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8358)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1863)
+	at org.h2.command.Parser.readTableReference(Parser.java:2334)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:90)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 62 common frames omitted
 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
 [WARN] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 [INFO] HikariPool-1 - Shutdown initiated...
